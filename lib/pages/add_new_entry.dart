@@ -105,17 +105,19 @@ class _AddNewEntryPageState extends State<AddNewEntryPage> {
             const SizedBox(height: 16),
 
             // Upload Button
-            ElevatedButton.icon(
-              onPressed: _pickImage,
-              icon: const Icon(Icons.photo_library),
-              label: const Text("Upload from Gallery"),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.pink.shade200,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                elevation: 5,
-                shadowColor: Colors.pink.shade100,
+            Center(
+              child: ElevatedButton.icon(
+                onPressed: _pickImage,
+                icon: const Icon(Icons.photo_library),
+                label: const Text("Upload from Gallery"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.pink.shade200,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+                  elevation: 5,
+                  shadowColor: Colors.pink.shade100,
+                ),
               ),
             ),
             const SizedBox(height: 24),
